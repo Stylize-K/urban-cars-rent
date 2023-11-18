@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { Suspense } from "react";
 import { Header, StyledLink, Navigation } from "./Layout.styled";
 
 const Layout = () => {
@@ -11,7 +12,9 @@ const Layout = () => {
           <StyledLink to="/favorites">Favorites</StyledLink>
         </Navigation>
       </Header>
-      <Outlet />
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
     </>
   );
 };

@@ -9,4 +9,10 @@ export const LoadMoreButton = styled.button`
   font-weight: 500;
   line-height: 1.5;
   text-decoration-line: underline;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: #0b44cd;
+  }
 `;

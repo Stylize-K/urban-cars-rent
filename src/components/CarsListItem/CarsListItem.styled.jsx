@@ -45,6 +45,12 @@ export const ButtonMore = styled.button`
   border-radius: 12px;
   background: #3470ff;
   color: #fff;
+  transition: background 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background: #0b44cd;
+  }
 `;
 export const ButtonHeart = styled.button`
   width: 46px;

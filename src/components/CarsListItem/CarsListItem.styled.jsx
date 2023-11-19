@@ -52,16 +52,28 @@ export const ButtonMore = styled.button`
     background: #0b44cd;
   }
 `;
-export const ButtonHeart = styled.button`
-  width: 46px;
-  height: 46px;
+// export const ButtonHeart = styled.button`
+//   width: 46px;
+//   height: 46px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   justify-content: center;
+//   align-items: center;
+//   border: none;
+//   background: transparent;
+// `;
+
+export const FavButton = styled.button`
   position: absolute;
-  top: 0;
-  right: 0;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
   border: none;
-  background: transparent;
+  top: 14px;
+  right: 14px;
+  width: 18px;
+  height: 18px;
+  background: none;
+  cursor: pointer;
 `;
 
 export const Span = styled.span`

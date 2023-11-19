@@ -27,10 +27,13 @@ export const carsSlice = createSlice({
     [fetchCars.pending]: handlePending,
     [fetchCars.fulfilled]: (state, action) => {
       state.isLoading = false;
-      state.items = action.payload;
+      state.items =
+        state.items[0]?.id === action.payload[0]?.id
+          ? action.payload
+          : [...state.items, ...action.payload];
     },
     [fetchCars.rejected]: handleRejected,
   },
 });
 
-export const carsReducer = carsSlice.reducer; // Експортуємо filterReducer у зовнішній код
+export const carsReducer = carsSlice.reducer; // Експортуємо carsReducer у зовнішній код

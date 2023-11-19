@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const LoadMoreButton = styled.button`
   background: none;
+  margin-bottom: 25px;
   border: none;
   text-align: center;
   color: #3470ff;

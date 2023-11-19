@@ -1,4 +1,4 @@
-import{s as e,j as t}from"./index-63532656.js";const r="/urban-cars-rent/assets/hero_pic-86fe8a25.jpg",n=e.section`
+import{s as e,j as t}from"./index-0ee561ed.js";const r="/urban-cars-rent/assets/hero_pic-86fe8a25.jpg",n=e.section`
   max-width: 100%;
   height: 400px;
   padding: 60px 20px;

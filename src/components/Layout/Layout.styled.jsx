@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Header = styled.header`
   display: flex;
+  justify-content: center;
 `;
 
 export const Navigation = styled.nav`
@@ -27,6 +28,6 @@ export const StyledLink = styled(NavLink)`
 
   &:hover,
   &:focus {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 `;

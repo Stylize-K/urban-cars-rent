@@ -4,27 +4,34 @@ import heroPicture from "../../assets/hero_pic.jpg";
 export const HeroSection = styled.section`
   max-width: 100%;
   height: 400px;
-  padding: 60px 20px;
+  padding: 60px 0;
 
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+`;
 
+export const BackgroundImage = styled.img`
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
   background-image: url(${heroPicture});
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-
-  /* max-width: 1600px;
-    height: 600px;
-    padding: 180px 200px; */
+  z-index: -10;
 `;
 
 export const HeroTitle = styled.h1`
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 36px;
+  color: #fff;
 `;
 
 export const Button = styled.button`
@@ -35,7 +42,9 @@ export const Button = styled.button`
   align-items: center;
   border-radius: 12px;
   background: #3470ff;
-  color: white;
+  color: #fff;
+  font-size: 16px;
+  transition: background 0.3s ease;
 
   &:hover,
   &:focus {

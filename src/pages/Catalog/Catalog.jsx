@@ -22,14 +22,14 @@ const Catalog = () => {
   };
 
   return (
-    <div>
+    <>
       <CarsList cars={cars} />
       {!isEndCollection && (
         <LoadMoreButton type="button" onClick={handleClickMore}>
           Load More
         </LoadMoreButton>
       )}
-    </div>
+    </>
   );
 };
 

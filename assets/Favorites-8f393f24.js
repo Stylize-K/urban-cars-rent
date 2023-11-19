@@ -1,1 +1,0 @@
-import{a as t,j as s}from"./index-34bf0956.js";import{s as e,C as a}from"./CarsList-745cad94.js";const n=()=>{const r=t(e);return s.jsxs(s.Fragment,{children:[r.length===0&&s.jsx("p",{children:"Oops, you don't have favorite cars"}),s.jsx(a,{cars:r})]})};export{n as default};

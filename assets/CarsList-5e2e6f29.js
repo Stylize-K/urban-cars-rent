@@ -1,4 +1,4 @@
-import{R as r,b as h,c as x,s as o,a as u,j as e,d as f,e as C}from"./index-34bf0956.js";function a(t=r){const s=t===r?h:x(t);return function(){const{store:i}=s();return i}}const g=a();function m(t=r){const s=t===r?g:a(t);return function(){return s().dispatch}}const w=m(),j=t=>t.favorites.items,v=o.li`
+import{R as r,b as h,c as x,s as o,a as u,j as e,d as f,e as C}from"./index-2c8a1b42.js";function a(t=r){const s=t===r?h:x(t);return function(){const{store:i}=s();return i}}const g=a();function m(t=r){const s=t===r?g:a(t);return function(){return s().dispatch}}const w=m(),j=t=>t.favorites.items,v=o.li`
   width: 274px;
   height: 426px;
   display: flex;
@@ -63,5 +63,5 @@ import{R as r,b as h,c as x,s as o,a as u,j as e,d as f,e as C}from"./index-34bf
   align-items: center;
   row-gap: 50px;
   column-gap: 29px;
-  margin: 50px 0 100px;
+  margin: 25px 0 25px;
 `,M=({cars:t})=>e.jsx(I,{children:t.map(s=>e.jsx(S,{car:s},s.id))});export{M as C,j as s,w as u};

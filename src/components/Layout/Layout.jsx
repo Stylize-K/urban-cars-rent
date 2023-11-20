@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Suspense } from "react";
+import { Loader } from "../../components/Loader/Loader";
 import { Header, StyledLink, Navigation } from "./Layout.styled";
 
 const Layout = () => {
@@ -12,7 +13,7 @@ const Layout = () => {
           <StyledLink to="/favorites">Favorites</StyledLink>
         </Navigation>
       </Header>
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
     </>

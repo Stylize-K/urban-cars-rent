@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { selectCars } from "../../redux/cars/selectors";
 import { fetchCars } from "../../redux/cars/operations";
 import { CarsList } from "../../components/CarsList/CarsList";
+import { Filter } from "../../components/Filter/Filter";
 import { LoadMoreButton } from "../../components/LoadMoreButton/LoadMoreButton.styled";
 
 const Catalog = () => {
@@ -23,6 +24,7 @@ const Catalog = () => {
 
   return (
     <>
+      <Filter />
       <CarsList cars={cars} />
       {!isEndCollection && (
         <LoadMoreButton type="button" onClick={handleClickMore}>
